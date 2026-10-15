@@ -1,6 +1,6 @@
 ## Measurement Data For "What Location Data Does An iPhone Send To Apple?"
 
-Paper: D.J. Leith, "Decoding What iOS Location Services Send to Apple: An LLM Is an Unreliable Analyst but a Useful Toolmaker", Trinity College Dublin. [link to be added]
+Paper: D.J. Leith, ["Decoding What iOS Location Services Send to Apple: An LLM Is an Unreliable Analyst but a Useful Toolmaker"](https://www.scss.tcd.ie/Doug.Leith/pubs/analysis_of_apple_location_services.pdf), Trinity College Dublin.
 
 This repository holds the network connections that an iPhone 8 (iOS 16.7.11) makes to Apple's location services, decoded to readable text. We recorded them in three experiments (location off, location on, and on car journeys) by decrypting the handset's HTTPS traffic with `mitmdump`, and we decoded the protobuf messages with [ios_decoder](https://github.com/doug-leith/ios-protobuf-decoding) using the message definitions recovered by Extractor, the tool described in the paper. The paper analyses these data. Here you can read the connections themselves, for example to check a claim in the paper or to look at behaviour that the paper does not discuss.
 
